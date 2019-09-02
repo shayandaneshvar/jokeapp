@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Joke Generator</title>
+</head>
+<script>
+    function refresh() {
+        window.location.reload(false);
+    }
+</script>
+<style>
+    h1, form, button, div {
+        margin: 0px auto;
+        padding: 5%;
+        white-space: nowrap;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button {
+        background-color: green;
+        border-radius: 20%;
+        border-style: none;
+        color: #ffffff;
+        box-sizing: content-box;
+        transition: all 900ms cubic-bezier(0, 0.4, 0.46, 0.96);
+    }
+
+    button:hover {
+        background-color: aquamarine;
+        color: #000;
+        transform: rotate(1turn);
+        transition: all 750ms cubic-bezier(1, -0.04, 0.46, 0.96);
+    }
+
+    div {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        background-color: greenyellow;
+        border-radius: 30%;
+        grid-row-gap: 10px;
+        width: 70%;
+        min-height: 50%;
+    }
+
+    body {
+        color: darkslategray;
+        background-color: cornflowerblue;
+    }
+</style>
+<body>
+<div>
+    <h1>Chuck Norris Joke !!</h1>
+    <p th:text="${joke}">Inset Joke Here</p>
+    <form action="#" onclick="refresh()">
+        <button>Generate Joke</button>
+    </form>
+</div>
+</body>
+</html>
