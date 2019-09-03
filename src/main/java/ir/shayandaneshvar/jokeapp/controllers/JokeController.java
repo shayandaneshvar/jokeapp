@@ -1,6 +1,6 @@
-package ir.shayandaneshvar.jokeapp.Controllers;
+package ir.shayandaneshvar.jokeapp.controllers;
 
-import ir.shayandaneshvar.jokeapp.Services.JokeService;
+import ir.shayandaneshvar.jokeapp.services.JokeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
