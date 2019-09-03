@@ -11,7 +11,7 @@
     </parent>
     <groupId>ir.shayandaneshvar</groupId>
     <artifactId>jokeapp</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-M2</version>
     <name>jokeapp</name>
     <description>Small Project to get familiar with Thymeleaf</description>
 
